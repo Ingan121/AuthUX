@@ -12,6 +12,8 @@
 #include "slpublic.h"
 #include "powrprof.h"
 
+#include "../gina/gina_securitycontrol.h"
+
 using namespace Microsoft::WRL;
 
 DirectUI::IClassInfo* CLogonFrame::Class = nullptr;
@@ -327,6 +329,8 @@ void CLogonFrame::ShowSecurityOptions(LC::LogonUISecurityOptions SecurityOptsFla
 	m_SecurityOptionsCompletion = wil::make_unique_nothrow<WI::AsyncDeferral<WI::CMarshaledInterfaceResult<LC::ILogonUISecurityOptionsResult>>>(completion);
 	if (m_SecurityOptionsCompletion.get() == nullptr)
 		return;
+
+	ShowGinaSecurityView();
 
 	DWORD cookie;
 	StartDefer(&cookie);

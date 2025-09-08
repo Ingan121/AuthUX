@@ -93,6 +93,18 @@
     <ClCompile Include="shell\auth\authux\consolelogon\lib\authux.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="shell\auth\authux\consolelogon\gina\gina_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shell\auth\authux\consolelogon\gina\util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shell\auth\authux\consolelogon\gina\gina_securitycontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shell\auth\authux\consolelogon\gina\gina_shutdownview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shell\auth\authux\consolelogon\dll\pch.h">
@@ -210,6 +222,24 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="shell\auth\authux\consolelogon\lib\authuxlockaction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\inc\WaitForCompletion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shell\auth\authux\consolelogon\gina\gina_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shell\auth\authux\consolelogon\gina\util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shell\auth\authux\consolelogon\gina\winsta.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shell\auth\authux\consolelogon\gina\gina_securitycontrol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shell\auth\authux\consolelogon\gina\gina_shutdownview.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
